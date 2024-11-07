@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1b1b1b;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.search-field {
+  gap: 10px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.inputEl {
+  border-style: none;
+  width: 80%;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+button {
+  border-style: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(224, 0, 0);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(200, 0, 0);
+}
+.main-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 750px;
+}
+.music-info {
+  width: 750px;
+  margin-bottom: 50px;
+  height: auto;
+  overflow: hidden;
+  background-color: #212121;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  flex-wrap: wrap;
+  box-shadow: rgba(77, 77, 77, 0.24) 0px 3px 8px;
+}
+.bio-img {
+  height: 200px;
+  transition: transform 0.3s;
+  width: 400px;
+  box-shadow: rgba(83, 83, 83, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.bio-img:hover {
+  transform: scale(1.1);
+}
+.bio h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.bio p {
+  font-size: 15px;
+}
+.bio {
+  padding: 10px;
+  height: auto;
+  overflow: scroll;
+  width: auto;
+  background-color: #212121;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(77, 77, 77, 0.24) 0px 3px 8px;
+}
+.cont-img {
+  width: auto;
+  height: 170px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: rgba(77, 77, 77, 0.24) 0px 3px 8px;
+}
+.cont-img:hover {
+  transform: scale(1.05);
+}
+.music-wrapper h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.name {
+  color: white;
+}
+.sub {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.img-div {
+  width: 300px;
+  height: auto;
+}
+.album-container {
+  width: 100%;
+  overflow-y: scroll;
+}
+.album-i {
+  width: 100%;
+  overflow: scroll;
+}
+
+.flip-card {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: auto;
+  height: 170px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+  background-color: rgba(18, 18, 18, 0.54);
+}
+.related,
+.album-container,
+.singles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.artist-name {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 400px;
+}
+@media (max-width: 784px) {
+  .wrapper {
+    display: flex;
+  }
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .music-info {
+    width: 90%;
+  }
+  .bio-img {
+    height: 140px;
+    width: 95%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .search-field {
+    width: 85%;
+  }
+  .inputEl {
+    font-size: 17px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .cont-img {
+    width: 160px;
+  }
+  .flip-card,
+  .flip-card-inner {
+    width: 160px;
+  }
+  .music-info {
+    padding: 0;
+    text-align: center;
+  }
+  button {
+    padding: 12px;
+  }
+}
