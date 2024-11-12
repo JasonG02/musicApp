@@ -243,4 +243,10 @@ footer {
   button {
     padding: 12px;
   }
+ .related,
+ .album-container,
+ .singles{
+  justify-content: center;
+  align-items: center;
+}
 }
